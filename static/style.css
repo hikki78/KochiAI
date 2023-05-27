@@ -1,56 +1,61 @@
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #222;
+  color: #fff;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #111;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 #chat-container {
-    background-color: #333333;
-    padding: 10px;
-    margin-bottom: 20px;
-    height: 300px;
-    overflow-y: scroll;
+  margin-bottom: 20px;
 }
 
-#messages {
-    overflow-wrap: break-word;
+.chat-bubble {
+  display: inline-block;
+  max-width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.kochi-bubble {
+  background-color: #0095ff;
+  align-self: flex-start;
+}
+
+.user-bubble {
+  background-color: #f5f5f5;
+  align-self: flex-end;
 }
 
 #input-container {
-    display: flex;
-    align-items: center;
+  display: flex;
 }
 
 #message-input {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px 0 0 5px;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 #send-btn {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #ffffff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#send-btn:hover {
-    background-color: #45a049;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0095ff;
+  color: #fff;
+  border: none;
+  margin-left: 10px;
 }
