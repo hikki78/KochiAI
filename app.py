@@ -5,7 +5,7 @@ import random
 app = Flask(__name__)
 
 # OpenAI API credentials
-openai.api_key = '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'
+openai.api_key = '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'
 
 # GPT-3.5 parameters
 model = "text-davinci-003"
