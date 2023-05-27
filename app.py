@@ -72,3 +72,10 @@ def is_greeting(message):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
+    
+# Serve static files
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    return send_from_directory(os.path.join(root_dir, 'static'), filename)
